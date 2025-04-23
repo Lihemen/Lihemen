@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Big Shoulder";
+  src: url("./Big_Shoulders/BigShoulders-VariableFont.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Iceland";
+  src: url("./Iceland/Iceland-Regular.ttf");
+  font-display: swap;
+}

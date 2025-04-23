@@ -1,0 +1,79 @@
+@import url("/fonts/font.css");
+@import "tailwindcss";
+
+:root {
+	--font-big-shoulder: "Big Shoulder", DIN Alternate;
+	--font-iceland: "Iceland", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue";
+	--color-red-1: #e84a4a;
+	--color-red-2: #49181a;
+	--color-green-1: #5de26a;
+	--color-green-2: #56cd61;
+	--color-green-3: #53cc60;
+	--color-green-4: #7dff68;
+	--color-gray-1: #7a7a7a;
+	--color-gray-2: #242425;
+	--bg-gradient-red: linear-gradient(
+		90deg,
+		rgba(232, 74, 74, 0) 0%,
+		rgba(232, 74, 74, 0) 12.5%,
+		rgba(232, 74, 74, 0.17) 48%,
+		rgba(232, 74, 74, 0.17) 52%,
+		rgba(232, 74, 74, 0) 87.5%,
+		rgba(232, 74, 74, 0) 100%
+	);
+	--bg-gradient-blue: linear-gradient(
+		270deg,
+		rgba(74, 175, 232, 0.13) 2.77%,
+		rgba(74, 175, 232, 0) 50%
+	);
+	--bg-gradient-green: linear-gradient(
+		270deg,
+		rgba(86, 205, 97, 0.13) 2.77%,
+		rgba(92, 224, 105, 0) 50%
+	);
+	--bg-gradient-red-dash: linear-gradient(
+		45deg,
+		#0a0a0a 70%,
+		#0a0a0a 90%,
+		#591515 98%,
+		#8b1e1e 100%
+	);
+}
+
+@theme {
+	--font-serif: var(--font-big-shoulder);
+	--font-sans: var(--font-iceland);
+	--color-red-1: var(--color-red-1);
+	--color-red-2: var(--color-red-2);
+	--color-green-1: var(--color-green-1);
+	--color-green-2: var(--color-green-2);
+	--color-green-3: var(--color-green-3);
+	--color-green-4: var(--color-green-4);
+	--color-gray-1: var(--color-gray-1);
+	--color-gray-2: var(--color-red-2);
+	--text-1\.5xl: 22px;
+	--text-2\.5xl: 26px;
+	--tracking-sm: 7.5%;
+	--text-2xs: 0.625rem; /** 10px */
+}
+
+@utility bg-gradient-red {
+	background: var(--bg-gradient-red);
+}
+
+@utility bg-gradient-red-dash {
+	background: var(--bg-gradient-red-dash);
+}
+
+body {
+	@apply m-0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
