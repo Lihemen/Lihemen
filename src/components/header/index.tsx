@@ -17,7 +17,12 @@ export function Header() {
 			</div>
 			<ul className="flex items-center gap-6">
 				<li>
-					<Link to="/creations" className="text-white">
+					<a href="/Lan_Hemense_CV.pdf" className="text-white" download>
+						In Print
+					</a>
+				</li>
+				<li>
+					<Link to="/credits" className="text-white">
 						Credits
 					</Link>
 				</li>

@@ -7,7 +7,10 @@ export function AboutMe() {
 	return (
 		<aside className="flex-[0.25] flex flex-col justify-between uppercase tracking-sm h-full">
 			<div className="flex flex-col gap-4">
-				<Link to="/about-me" className="border border-white/13 relative p-4">
+				<Link
+					to="/about-me"
+					className="border border-white/13 relative p-4 active:scale-95 transition-transform"
+				>
 					<img
 						src="/imgs/me.png"
 						alt="Hemense"
@@ -38,10 +41,10 @@ export function AboutMe() {
 						AFEX
 					</a>
 				</div>
-				<div>
+				<Link to="/open-for-hire">
 					<h5 className="text-sm font-sans leading-none">Availability</h5>
 					<TitleBox title="Open for Hire" />
-				</div>
+				</Link>
 				<div>
 					<h5 className="text-sm font-sans leading-none">Connect</h5>
 					<Link

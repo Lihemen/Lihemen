@@ -14,6 +14,7 @@
 	--color-green-4: #7dff68;
 	--color-gray-1: #7a7a7a;
 	--color-gray-2: #242425;
+	--color-gray-3: #b2b7ba;
 	--bg-gradient-red: linear-gradient(
 		90deg,
 		rgba(232, 74, 74, 0) 0%,
@@ -52,7 +53,8 @@
 	--color-green-3: var(--color-green-3);
 	--color-green-4: var(--color-green-4);
 	--color-gray-1: var(--color-gray-1);
-	--color-gray-2: var(--color-red-2);
+	--color-gray-2: var(--color-gray-2);
+	--color-gray-3: var(--color-gray-3);
 	--text-1\.5xl: 22px;
 	--text-2\.5xl: 26px;
 	--tracking-sm: 7.5%;
@@ -65,6 +67,11 @@
 
 @utility bg-gradient-red-dash {
 	background: var(--bg-gradient-red-dash);
+}
+
+@utility clip-pent {
+	-webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+	clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
 }
 
 body {
