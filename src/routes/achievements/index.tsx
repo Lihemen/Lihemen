@@ -38,14 +38,14 @@ function RouteComponent() {
 						<h5>Achieved:</h5>
 						<Achievement
 							title="released personal website"
-							description="the site you are looking at right now, yes, I did it! And it took me a few days."
+							description="The site you are exploring right now, yes, I built it! Took me a few focused days to bring it to life."
 							image="/imgs/rewards/3.png"
 							completed
 							completion_date={new Date("2025-04-30")}
 						/>
 						<Achievement
-							title="developed my Open source plugin"
-							description="I have created 2 Open Source Typescript libraries for managing horizontal dates & cookies"
+							title="developed 2 Open source packages"
+							description="Built two Typescript libraries for managing horizontal dates and cookies, shared openly with the community."
 							image="/imgs/rewards/3.png"
 							completed
 							completion_date={new Date("2025-01-14")}
@@ -57,7 +57,7 @@ function RouteComponent() {
 
 						<Achievement
 							title="gain 50 stars on any of my repository"
-							description="the site you are looking at right now, yes, I did it! And it took me a few days."
+							description="Working toward building tools that earn recognition and support from developers worldwide."
 							image="/imgs/rewards/3.png"
 							completed={false}
 							color="blue"
@@ -65,7 +65,7 @@ function RouteComponent() {
 						/>
 						<Achievement
 							title="Become fluent in Dutch and German"
-							description="I have created 2 Open Source Typescript libraries for managing horizontal dates & cookies"
+							description="On a journey to master Dutch and German to connect with more people and cultures."
 							image="/imgs/rewards/3.png"
 							completed={false}
 							color="green"
