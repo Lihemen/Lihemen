@@ -3,22 +3,22 @@ import { ArrowLeft2, ArrowRight2 } from "iconsax-react";
 import { useRef, useState } from "react";
 
 import { cn } from "@/lib/cn";
-import { WORKS } from "@/services/data";
+import type { Work } from "@/services/data/types";
 import { Carousel } from "@mantine/carousel";
+import { Link } from "@tanstack/react-router";
 
 import { Corners } from "../corners";
 
-export function CreationsCarousel() {
+export function CreationsCarousel({ data }: { data: Work[] }) {
 	const autoplay = useRef(Autoplay({ delay: 3500 }));
 	const [activeSlide, setActiveSlide] = useState(0);
 
 	return (
 		<Carousel
-			onSlideChange={(index) => setActiveSlide(index)}
+			onSlideChange={setActiveSlide}
 			slideSize="33.333%"
 			slideGap="xl"
 			height="100%"
-			initialSlide={1}
 			align="center"
 			loop
 			styles={{
@@ -41,12 +41,8 @@ export function CreationsCarousel() {
 			onMouseEnter={autoplay.current.stop}
 			onMouseLeave={autoplay.current.reset}
 		>
-			{WORKS.map((slide, index) => {
-				const slidePosition = getSlidePosition(
-					index,
-					activeSlide,
-					WORKS.length,
-				);
+			{data.map((slide, index) => {
+				const slidePosition = getSlidePosition(index, activeSlide, data.length);
 
 				return (
 					<Carousel.Slide key={slide.title}>
@@ -76,14 +72,14 @@ export function CreationsCarousel() {
 											height={500}
 											className="w-full h-full object-cover object-left"
 										/>
-										<a
-											target="_blank"
+										<Link
+											to="/creations/$slug"
+											params={{ slug: slide.slug }}
 											rel="noreferrer noopener"
-											href={slide.link}
 											className="self-end shrink-0 border border-red-1 px-2 py-1.5 text-xs"
 										>
 											View Live
-										</a>
+										</Link>
 									</div>
 
 									<Corners />

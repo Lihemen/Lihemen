@@ -6,4 +6,10 @@ export interface Work {
 	description: string;
 	slug: string;
 	image?: string;
+	technologies: Array<`fa-${string} fa-${string}`>;
+	links: Array<{
+		name: string;
+		size: number;
+	}>;
+	bio: string;
 }

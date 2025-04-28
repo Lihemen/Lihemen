@@ -63,10 +63,7 @@ export function Achievement({
 	const { background, border, textcolor, status } = colors[color];
 	const done = "completion_date" in props;
 	return (
-		<div
-			style={{ background, border }}
-			className={cn("p-0 clip-pent", className)}
-		>
+		<div style={{ background, border }} className={cn("p-0", className)}>
 			<div className="flex">
 				<div className="border-r border-r-[#1D1D20] p-4 w-32 shrink-0">
 					<img

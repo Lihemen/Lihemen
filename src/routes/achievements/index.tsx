@@ -1,4 +1,5 @@
 import { Achievement } from "@/components/achievement";
+import { RingProgress } from "@mantine/core";
 import { Link, createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/achievements/")({
@@ -13,6 +14,15 @@ function RouteComponent() {
 			<div className="flex gap-4 h-full w-full max-w-3xl justfy-center">
 				<div className="w-44 shrink-0 flex flex-col gap-4">
 					<div className="border border-white/13 h-40 grid place-items-center justify-center">
+						<RingProgress
+							rootColor="transparent"
+							sections={[{ value: (14 / 25) * 100, color: "#E84A4A" }]}
+							label={
+								<p className="text-center text-2.5xl text-red-1 font-serif">
+									14/25
+								</p>
+							}
+						/>
 						<p className="text-xs text-gray-1">Progress</p>
 					</div>
 					<div className="text-sm text-gray-1">
