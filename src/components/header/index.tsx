@@ -1,6 +1,15 @@
+import dayjs from "dayjs";
+import timezone from "dayjs/plugin/timezone";
+import utc from "dayjs/plugin/utc";
+
 import { Link } from "@tanstack/react-router";
 
+dayjs.extend(utc);
+dayjs.extend(timezone);
+
 export function Header() {
+	const userTz = dayjs.tz.guess();
+	const myTz = "Africa/Lagos";
 	return (
 		<header className="flex items-center justify-between py-6 font-bold uppercase text-white/20 backdrop-blur-lg">
 			<div className="inline-flex gap-10">
@@ -28,11 +37,15 @@ export function Header() {
 				</li>
 				<li>
 					Server Time:
-					<span className="text-white ml-2">8:42</span>
+					<span className="text-white ml-2">
+						{dayjs().tz(myTz).format("HH:mm")}
+					</span>
 				</li>
 				<li>
 					Local Time:
-					<span className="text-white ml-2">8:42</span>
+					<span className="text-white ml-2">
+						{dayjs().tz(userTz).format("HH:mm")}
+					</span>
 				</li>
 			</ul>
 		</header>

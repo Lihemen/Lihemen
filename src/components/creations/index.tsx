@@ -3,8 +3,8 @@ import { ArrowLeft2, ArrowRight2 } from "iconsax-react";
 import { useRef, useState } from "react";
 
 import { cn } from "@/lib/cn";
+import { WORKS } from "@/services/data";
 import { Carousel } from "@mantine/carousel";
-import { Link } from "@tanstack/react-router";
 
 import { Corners } from "../corners";
 
@@ -12,39 +12,47 @@ export function CreationsCarousel() {
 	const autoplay = useRef(Autoplay({ delay: 3500 }));
 	const [activeSlide, setActiveSlide] = useState(0);
 
-	const slides = [0, 1, 2, 3, 4, 5];
-
 	return (
 		<Carousel
-			withControls={false}
 			onSlideChange={(index) => setActiveSlide(index)}
 			slideSize="33.333%"
-			slideGap="md"
+			slideGap="xl"
 			height="100%"
 			initialSlide={1}
 			align="center"
 			loop
 			styles={{
 				root: { height: "calc(100%*4/5)" },
+				control: {
+					background: "transparent",
+					color: "gray",
+					border: "none",
+					padding: 0,
+				},
 			}}
+			previousControlIcon={
+				<ArrowLeft2 size={48} color="#FFFFFF" className="opacity-40" />
+			}
+			nextControlIcon={
+				<ArrowRight2 size={48} color="#FFFFFF" className="opacity-40" />
+			}
+			controlsOffset="28%"
 			plugins={[autoplay.current]}
 			onMouseEnter={autoplay.current.stop}
 			onMouseLeave={autoplay.current.reset}
-			nextControlIcon={<ArrowRight2 color="red" size={14} />}
-			previousControlIcon={<ArrowLeft2 color="red" size={14} />}
 		>
-			{slides.map((slide, index) => {
+			{WORKS.map((slide, index) => {
 				const slidePosition = getSlidePosition(
 					index,
 					activeSlide,
-					slides.length,
+					WORKS.length,
 				);
 
 				return (
-					<Carousel.Slide key={slide}>
+					<Carousel.Slide key={slide.title}>
 						<div
 							className={cn(
-								"h-full flex items-center self-center w-full  perspective-normal uppercase",
+								"h-full flex items-center self-center w-full  perspective-normal uppercase relative",
 								index !== activeSlide && "h-4/6",
 							)}
 						>
@@ -59,23 +67,23 @@ export function CreationsCarousel() {
 								)}
 							>
 								<div className="bg-black h-4/5 relative flex flex-col p-4 gap-8">
-									<h5>Published 3 months Ago</h5>
+									<h5>Published {slide.date_published}</h5>
 									<div className="flex-1 flex flex-col gap-2 h-full">
 										<img
-											src="/imgs/works/kaspa.png"
+											src={slide.image}
 											alt="Work"
 											width={500}
 											height={500}
 											className="w-full h-full object-cover object-left"
 										/>
-										<Link
-											to="/creations/$slug"
+										<a
 											target="_blank"
-											params={{ slug: "123" }}
+											rel="noreferrer noopener"
+											href={slide.link}
 											className="self-end shrink-0 border border-red-1 px-2 py-1.5 text-xs"
 										>
 											View Live
-										</Link>
+										</a>
 									</div>
 
 									<Corners />
@@ -90,12 +98,12 @@ export function CreationsCarousel() {
 													slidePosition !== "center" && "text-xs",
 												)}
 											>
-												The Project Name
+												{slide.title}
 											</h6>
 											<p
 												className={cn(slidePosition !== "center" && "text-xs")}
 											>
-												KASPA
+												{slide.sub_title}
 											</p>
 										</div>
 										<div className="border-dashed border border-red-1 w-full" />
@@ -106,9 +114,7 @@ export function CreationsCarousel() {
 											slidePosition === "center" && "visible",
 										)}
 									>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Iure temporibus perspiciatis modi doloribus, tenetur maiores
-										nam sapiente hic vero illum.
+										{slide.description}
 									</p>
 								</div>
 							</div>
