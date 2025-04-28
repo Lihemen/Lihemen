@@ -12,7 +12,7 @@ export function AboutMe() {
 					className="border border-white/13 relative p-4 active:scale-95 transition-transform"
 				>
 					<img
-						src="/imgs/me.png"
+						src="/imgs/me-alt.png"
 						alt="Hemense"
 						width={164}
 						height={148}
@@ -49,9 +49,9 @@ export function AboutMe() {
 					<h5 className="text-sm font-sans leading-none">Connect</h5>
 					<Link
 						to="/contact-me"
-						className="text-lg text-red-1 font-bold font-serif border border-red-1 mt-1 py-1 px-2 flex items-center justify-between gap-4"
+						className="text-lg text-red-1 font-bold font-serif border border-red-1 mt-1 py-1 px-2 flex items-center justify-between gap-4 overflow-clip"
 					>
-						Open connection
+						<span className="shrink-0">Open connection</span>
 						<svg
 							width="14"
 							height="21"

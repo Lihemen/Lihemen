@@ -13,3 +13,7 @@ export interface Work {
 	}>;
 	bio: string;
 }
+
+export interface Log {
+	title: string;
+}

@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
 
 function App() {
 	return (
-		<main className="h-dvh w-dvw bg-gradient-red-dash flex items-center justify-center">
+		<main className="h-svh w-dvw bg-gradient-red-dash flex items-center justify-center">
 			<div className="flex items-center gap-20">
 				<h1 className="font-serif leading-tight text-red-1 text-[33.625rem] font-bold tracking-[-6%]">
 					HI!

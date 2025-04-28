@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 
-import type { Work } from "./types";
+import type { Log, Work } from "./types";
 
 dayjs.extend(relativeTime);
 const format_date = (date: Date) => dayjs(date).fromNow();
@@ -177,3 +177,5 @@ export const WORKS: Array<Work> = [
 		],
 	},
 ];
+
+export const LOG_ENTRIES: Array<Log> = [];

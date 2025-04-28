@@ -37,7 +37,7 @@ export function TitleBox({
 				className,
 			)}
 		>
-			<span>{title}</span>
+			<span className="shrink-0">{title}</span>
 			{rightSection}
 		</div>
 	);

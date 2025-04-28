@@ -19,7 +19,7 @@ export function RootLayout({ children }: PropsWithChildren) {
 			exit={{ opacity: 0 }}
 			transition={{ ease: "easeInOut", duration: 2000 }}
 			id="root-layout"
-			className="bg-gradient-red-dash text-white flex flex-col h-dvh overflow-auto px-10"
+			className="bg-gradient-red-dash text-white flex flex-col h-svh overflow-auto px-10"
 		>
 			<Header />
 			<section className="flex w-full gap-4 h-full max-h-4/5">
