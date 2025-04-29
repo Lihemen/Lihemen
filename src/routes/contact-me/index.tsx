@@ -13,7 +13,7 @@ function RouteComponent() {
 				<p className="text-gray-3">wanna chat? Or just share something cool?</p>
 			</div>
 
-			<ContactForm id="Submitted via connect" />
+			<ContactForm id="CONNECTING WITH YOU" />
 		</div>
 	);
 }
