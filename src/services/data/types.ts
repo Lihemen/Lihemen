@@ -16,4 +16,13 @@ export interface Work {
 
 export interface Log {
 	title: string;
+	current: boolean;
+	project_update: string;
+	challenges: string;
+	next_steps: string;
+	conclusion: string;
+	start_date: Date;
+	end_date: Date | null;
+	location: string;
+	status: "Completed" | "In Development";
 }
