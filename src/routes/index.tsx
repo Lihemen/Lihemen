@@ -7,8 +7,8 @@ export const Route = createFileRoute("/")({
 function App() {
 	return (
 		<main className="h-svh w-dvw bg-gradient-red-dash flex items-center justify-center">
-			<div className="flex items-center gap-20">
-				<h1 className="font-serif leading-tight text-red-1 text-[33.625rem] font-bold tracking-[-6%]">
+			<div className="flex flex-col lg:flex-row items-start lg:items-center gap-10 md:gap-16 lg:gap-20 px-4 lg:px-0">
+				<h1 className="font-serif leading-tight text-red-1 text-[12.5rem] md:text-[20rem] lg:text-[33.625rem] font-bold tracking-[-6%]">
 					HI!
 				</h1>
 				<div className="text-white font-sans max-w-xl text-xl grid gap-6">

@@ -13,7 +13,7 @@ function RouteComponent() {
 				<div className="relative">
 					<h3 className="text-center">Who is Hemense Lan</h3>
 					<div
-						className="absolute -left-[7%] top-1/2 -translate-y-1/2 w-full flex items-center pointer-events-none"
+						className="absolute -left-[7%] top-1/2 -translate-y-1/2 w-full hidden lg:flex items-center pointer-events-none"
 						aria-hidden
 					>
 						<span className="border-l-2 border-t-2 border-[#333] -rotate-45 block w-2 h-2 translate-x-2" />
@@ -22,7 +22,7 @@ function RouteComponent() {
 					</div>
 				</div>
 
-				<div className="flex justify-end h-full gap-4">
+				<div className="flex justify-center lg:justify-end h-full gap-4">
 					<ul className="flex flex-col gap-4">
 						<li className="flex gap-4">
 							<p className="text-xs text-right mt-2 text-gray-1 w-36">
@@ -58,7 +58,7 @@ function RouteComponent() {
 							</p>
 						</li>
 					</ul>
-					<div className="h-full bg-black relative shrink-0">
+					<div className="hidden lg:block h-full bg-black relative shrink-0">
 						<img
 							src="/imgs/me-full.png"
 							alt="Hemense"

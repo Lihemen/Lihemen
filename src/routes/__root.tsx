@@ -29,6 +29,7 @@ const theme = createTheme({
 			"#9f000e",
 		],
 	},
+	primaryColor: "app",
 	fontFamily: "Iceland",
 });
 

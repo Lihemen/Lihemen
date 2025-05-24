@@ -22,7 +22,7 @@ export interface Log {
 	next_steps: string;
 	conclusion: string;
 	start_date: Date;
-	end_date: Date | null;
+	end_date: Date;
 	location: string;
 	status: "Completed" | "In Development";
 	images: string[];

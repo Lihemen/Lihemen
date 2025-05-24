@@ -11,7 +11,6 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as SettingsRouteImport } from './routes/settings/route'
 import { Route as OpenForHireRouteImport } from './routes/open-for-hire/route'
 import { Route as LogsRouteImport } from './routes/logs/route'
 import { Route as CreditsRouteImport } from './routes/credits/route'
@@ -30,12 +29,6 @@ import { Route as AchievementsIndexImport } from './routes/achievements/index'
 import { Route as CreationsSlugRouteImport } from './routes/creations/$slug/route'
 
 // Create/Update Routes
-
-const SettingsRouteRoute = SettingsRouteImport.update({
-  id: '/settings',
-  path: '/settings',
-  getParentRoute: () => rootRoute,
-} as any)
 
 const OpenForHireRouteRoute = OpenForHireRouteImport.update({
   id: '/open-for-hire',
@@ -200,13 +193,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof OpenForHireRouteImport
       parentRoute: typeof rootRoute
     }
-    '/settings': {
-      id: '/settings'
-      path: '/settings'
-      fullPath: '/settings'
-      preLoaderRoute: typeof SettingsRouteImport
-      parentRoute: typeof rootRoute
-    }
     '/creations/$slug': {
       id: '/creations/$slug'
       path: '/$slug'
@@ -343,7 +329,6 @@ export interface FileRoutesByFullPath {
   '/credits': typeof CreditsRouteRoute
   '/logs': typeof LogsRouteRouteWithChildren
   '/open-for-hire': typeof OpenForHireRouteRouteWithChildren
-  '/settings': typeof SettingsRouteRoute
   '/creations/$slug': typeof CreationsSlugRouteRoute
   '/achievements/': typeof AchievementsIndexRoute
   '/bio/': typeof BioIndexRoute
@@ -357,7 +342,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-me': typeof AboutMeRouteRoute
   '/credits': typeof CreditsRouteRoute
-  '/settings': typeof SettingsRouteRoute
   '/creations/$slug': typeof CreationsSlugRouteRoute
   '/achievements': typeof AchievementsIndexRoute
   '/bio': typeof BioIndexRoute
@@ -378,7 +362,6 @@ export interface FileRoutesById {
   '/credits': typeof CreditsRouteRoute
   '/logs': typeof LogsRouteRouteWithChildren
   '/open-for-hire': typeof OpenForHireRouteRouteWithChildren
-  '/settings': typeof SettingsRouteRoute
   '/creations/$slug': typeof CreationsSlugRouteRoute
   '/achievements/': typeof AchievementsIndexRoute
   '/bio/': typeof BioIndexRoute
@@ -400,7 +383,6 @@ export interface FileRouteTypes {
     | '/credits'
     | '/logs'
     | '/open-for-hire'
-    | '/settings'
     | '/creations/$slug'
     | '/achievements/'
     | '/bio/'
@@ -413,7 +395,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about-me'
     | '/credits'
-    | '/settings'
     | '/creations/$slug'
     | '/achievements'
     | '/bio'
@@ -432,7 +413,6 @@ export interface FileRouteTypes {
     | '/credits'
     | '/logs'
     | '/open-for-hire'
-    | '/settings'
     | '/creations/$slug'
     | '/achievements/'
     | '/bio/'
@@ -453,7 +433,6 @@ export interface RootRouteChildren {
   CreditsRouteRoute: typeof CreditsRouteRoute
   LogsRouteRoute: typeof LogsRouteRouteWithChildren
   OpenForHireRouteRoute: typeof OpenForHireRouteRouteWithChildren
-  SettingsRouteRoute: typeof SettingsRouteRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -466,7 +445,6 @@ const rootRouteChildren: RootRouteChildren = {
   CreditsRouteRoute: CreditsRouteRoute,
   LogsRouteRoute: LogsRouteRouteWithChildren,
   OpenForHireRouteRoute: OpenForHireRouteRouteWithChildren,
-  SettingsRouteRoute: SettingsRouteRoute,
 }
 
 export const routeTree = rootRoute
@@ -487,8 +465,7 @@ export const routeTree = rootRoute
         "/creations",
         "/credits",
         "/logs",
-        "/open-for-hire",
-        "/settings"
+        "/open-for-hire"
       ]
     },
     "/": {
@@ -536,9 +513,6 @@ export const routeTree = rootRoute
       "children": [
         "/open-for-hire/"
       ]
-    },
-    "/settings": {
-      "filePath": "settings/route.tsx"
     },
     "/creations/$slug": {
       "filePath": "creations/$slug/route.tsx",

@@ -101,7 +101,7 @@ export function ContactForm({ id }: { id: string }) {
 					classNames={{ input: "focus:border-red-1!" }}
 				/>
 			</div>
-			<div className="flex *:flex-1 font-serif gap-4">
+			<div className="flex flex-col lg:flex-row *:flex-1 font-serif gap-4">
 				<Button
 					type="submit"
 					disabled={isPending}

@@ -11,7 +11,7 @@ export function Header() {
 	const userTz = dayjs.tz.guess();
 	const myTz = "Africa/Lagos";
 	return (
-		<header className="flex items-center justify-between py-6 font-bold uppercase text-white/20 backdrop-blur-lg">
+		<header className="hidden lg:flex items-center justify-between py-6 font-bold uppercase text-white/20 backdrop-blur-lg">
 			<div className="inline-flex gap-10">
 				<div className="inline-flex items-end leading-none font-serif tracking-[7.5%] gap-1">
 					<span className="text-2.5xl text-green-4">48</span> <span>Level</span>

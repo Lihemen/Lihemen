@@ -37,8 +37,8 @@ export function TitleBox({
 				className,
 			)}
 		>
-			<span className="shrink-0">{title}</span>
-			{rightSection}
+			<span className="flex-1 text-left w-full line-clamp-1">{title}</span>
+			<span>{rightSection}</span>
 		</div>
 	);
 }

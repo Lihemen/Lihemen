@@ -11,8 +11,8 @@ function RouteComponent() {
 		<div className="flex flex-col items-center px-4 py-6 gap-4 bg-gradient-red h-full uppercase overflow-clip">
 			<h3 className="uppercase text-center">Achievements.</h3>
 
-			<div className="flex gap-4 h-full w-full max-w-3xl justfy-center">
-				<div className="w-44 shrink-0 flex flex-col gap-4">
+			<div className="flex flex-col lg:flex-row gap-4 h-full w-full max-w-3xl justfy-center">
+				<div className="lg:w-44 shrink-0 flex flex-col gap-4">
 					<div className="border border-white/13 h-40 grid place-items-center justify-center">
 						<RingProgress
 							rootColor="transparent"
@@ -83,7 +83,7 @@ function RouteComponent() {
 						/>
 					</div>
 				</div>
-				<ul className="w-max shrink-0">
+				<ul className="w-max shrink-0 order-first lg:order-[unset]">
 					<li>
 						<label
 							htmlFor="achieved"

@@ -5,11 +5,6 @@
 	display: none;
 }
 
-body {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none;
-}
-
 :root {
 	--font-big-shoulder: "Big Shoulder", DIN Alternate;
 	--font-iceland: "Iceland", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -24,6 +19,7 @@ body {
 	--color-gray-1: #7a7a7a;
 	--color-gray-2: #242425;
 	--color-gray-3: #b2b7ba;
+	--color-black-1: #0a0a0a;
 	--bg-gradient-red: linear-gradient(
 		90deg,
 		rgba(232, 74, 74, 0) 0%,
@@ -166,6 +162,7 @@ html.orange:root {
 	--color-gray-1: var(--color-gray-1);
 	--color-gray-2: var(--color-gray-2);
 	--color-gray-3: var(--color-gray-3);
+	--color-black-1: var(--color-black-1);
 	--text-1\.5xl: 22px;
 	--text-2\.5xl: 26px;
 	--tracking-sm: 7.5%;
@@ -194,6 +191,9 @@ body {
 	@apply m-0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;
+	scroll-behavior: smooth;
 }
 
 code {

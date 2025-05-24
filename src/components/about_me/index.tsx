@@ -5,11 +5,11 @@ import { TitleBox } from "../title-box";
 
 export function AboutMe() {
 	return (
-		<aside className="flex-[0.25] flex flex-col justify-between uppercase tracking-sm h-full">
+		<aside className="flex-[0.25] flex flex-col gap-2 justify-between uppercase tracking-sm h-full">
 			<div className="flex flex-col gap-4">
 				<Link
 					to="/about-me"
-					className="border border-white/13 relative p-4 active:scale-95 transition-transform"
+					className="border border-white/13 relative p-4 active:scale-95 transition-transform hidden lg:block"
 				>
 					<img
 						src="/imgs/me-alt.png"
@@ -43,7 +43,7 @@ export function AboutMe() {
 				</div>
 				<Link to="/open-for-hire">
 					<h5 className="text-sm font-sans leading-none">Availability</h5>
-					<TitleBox title="Open for Hire" />
+					<TitleBox title="Open for Hire" className="h-8" />
 				</Link>
 				<div>
 					<h5 className="text-sm font-sans leading-none">Connect</h5>

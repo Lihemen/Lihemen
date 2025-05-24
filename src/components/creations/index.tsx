@@ -16,7 +16,11 @@ export function CreationsCarousel({ data }: { data: Work[] }) {
 	return (
 		<Carousel
 			onSlideChange={setActiveSlide}
-			slideSize="33.333%"
+			slideSize={{
+				sm: "100%",
+				md: "50%",
+				lg: "33.33%",
+			}}
 			slideGap="xl"
 			height="100%"
 			align="center"
@@ -31,10 +35,18 @@ export function CreationsCarousel({ data }: { data: Work[] }) {
 				},
 			}}
 			previousControlIcon={
-				<ArrowLeft2 size={48} color="#FFFFFF" className="opacity-40" />
+				<ArrowLeft2
+					size={48}
+					color="#FFFFFF"
+					className="opacity-40 hidden lg:block"
+				/>
 			}
 			nextControlIcon={
-				<ArrowRight2 size={48} color="#FFFFFF" className="opacity-40" />
+				<ArrowRight2
+					size={48}
+					color="#FFFFFF"
+					className="opacity-40 hidden lg:block"
+				/>
 			}
 			controlsOffset="28%"
 			plugins={[autoplay.current]}

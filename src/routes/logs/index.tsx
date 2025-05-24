@@ -6,7 +6,7 @@ import { TitleBox } from "@/components/title-box";
 import { LOG_ENTRIES } from "@/services/data";
 import { Carousel } from "@mantine/carousel";
 import { Modal } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
+import { useDisclosure, useWindowScroll } from "@mantine/hooks";
 import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/logs/")({
@@ -19,6 +19,7 @@ export const Route = createFileRoute("/logs/")({
 function RouteComponent() {
 	const data = useLoaderData({ from: "/logs/" });
 	const [opened, { toggle }] = useDisclosure();
+	const [, scrollTop] = useWindowScroll();
 
 	const [logs, setLogs] = useState({
 		current: data.filter((el) => el.current)[0],
@@ -37,13 +38,15 @@ function RouteComponent() {
 				.concat({ ...prev.current, current: false })
 				.filter((_, id) => id !== idx),
 		}));
+
+		scrollTop({ y: 0 });
 	};
 
 	const { current, others } = logs;
 
 	return (
 		<>
-			<div className="flex flex-col items-center p-6 gap-4 bg-gradient-red h-full uppercase tracking-sm overflow-auto">
+			<div className="flex flex-col items-center p-6 pb-20 gap-4 bg-gradient-red h-full uppercase tracking-sm overflow-auto">
 				<h3 className="text-center">data log dump initialized.</h3>
 				<div className="w-full max-w-3xl leading-none flex flex-col gap-4 items-center">
 					<div className="grid gap-1.5 w-full">
@@ -91,7 +94,7 @@ function RouteComponent() {
 						<h6>Older Logs:</h6>
 						<div className="w-full grid gap-2">
 							{others
-								.sort((a, b) => a.start_date.getTime() - b.start_date.getTime())
+								.sort((a, b) => a.end_date.getTime() - b.end_date.getTime())
 								.map((log, idx) => (
 									<button
 										type="button"
