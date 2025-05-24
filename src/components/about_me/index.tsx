@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import { Corners } from "../corners";
+import { Socials } from "../socials";
 import { TitleBox } from "../title-box";
 
 export function AboutMe() {
@@ -67,6 +68,7 @@ export function AboutMe() {
 						</svg>
 					</Link>
 				</div>
+				<Socials />
 			</div>
 			<div>
 				<h5 className="text-lg text-red-1 font-bold font-serif">Motto:</h5>
