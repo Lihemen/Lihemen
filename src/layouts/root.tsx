@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import type { PropsWithChildren } from "react";
 
 import { AboutMe } from "@/components/about_me";
@@ -7,21 +6,13 @@ import { Corners } from "@/components/corners";
 import { Header } from "@/components/header";
 import { Navigation } from "@/components/navigation";
 import { MobileNavigation } from "@/components/navigation/mobile";
-import { useLocation } from "@tanstack/react-router";
 
 export function RootLayout({ children }: PropsWithChildren) {
-	const location = useLocation();
-
 	return (
 		<>
-			<motion.main
-				key={location.pathname}
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				exit={{ opacity: 0 }}
-				transition={{ ease: "easeInOut", duration: 2000 }}
+			<main
 				id="root-layout"
-				className="bg-gradient-red-dash text-white flex flex-col h-svh overflow-auto px-4 md:px-6 lg:px-10 pt-10 lg:pt-0"
+				className="relative bg-gradient-red-dash text-white flex flex-col h-svh overflow-auto px-4 md:px-6 lg:px-10 pt-10 lg:pt-0"
 			>
 				<Header />
 				<section className="flex flex-col lg:flex-row w-full gap-4 h-full max-h-4/5">
@@ -33,8 +24,8 @@ export function RootLayout({ children }: PropsWithChildren) {
 					</div>
 					<ActiveQuest />
 				</section>
-			</motion.main>
-			<MobileNavigation />
+				<MobileNavigation />
+			</main>
 		</>
 	);
 }

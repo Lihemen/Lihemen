@@ -7,7 +7,7 @@ import { TitleBox } from "../title-box";
 
 export function ActiveQuest() {
 	return (
-		<aside className="hidden lg:flex flex-col flex-[0.32] justify-between uppercase tracking-sm h-full">
+		<aside className="hidden lg:flex flex-col lg:flex-[0.32] justify-between uppercase tracking-sm h-full">
 			<Link
 				to="/creations/$slug"
 				params={{ slug: "kaspa" }}

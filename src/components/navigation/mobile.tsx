@@ -9,11 +9,11 @@ import { NavLink } from "./navlink";
 
 export function MobileNavigation() {
 	const navigate = useNavigate();
-	const [opened, { toggle }] = useDisclosure();
+	const [opened, { toggle, close }] = useDisclosure();
 
 	return (
 		<>
-			<header className="lg:hidden sticky bottom-0 left-0 right-0 w-full z-10 bg-[#0a0a0a]">
+			<header className="lg:hidden fixed bottom-0 left-0 right-0 w-full z-10 bg-[#0a0a0a]">
 				<nav className="flex items-center gap-4 p-2 *:flex-1">
 					<button
 						type="button"
@@ -76,21 +76,25 @@ export function MobileNavigation() {
 								to="/bio"
 								title="Beginning"
 								description="Where the journey first takes flight."
+								onClick={close}
 							/>
 							<NavLink
 								to="/logs"
 								title="Logs"
 								description="Records of every step and story"
+								onClick={close}
 							/>
 							<NavLink
 								to="/achievements"
 								title="Milestones"
 								description="Milestones marking progress made."
+								onClick={close}
 							/>
 							<NavLink
 								to="/creations"
 								title="Creations"
 								description="Projects crafted with care and skill."
+								onClick={close}
 							/>
 						</ul>
 					</div>

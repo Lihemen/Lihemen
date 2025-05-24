@@ -43,7 +43,14 @@ export function VisualSettings() {
 				radius="sm"
 				withCloseButton={false}
 				closeOnClickOutside={false}
-				classNames={{ content: "bg-transparent! uppercase! tracking-sm" }}
+				styles={{
+					content: {
+						background: "transparent",
+						textTransform: "uppercase",
+						letterSpacing: "7.5%",
+						backdropFilter: "blur(10px)",
+					},
+				}}
 			>
 				<h6 className="text-lg font-serif font-medium text-white">
 					Visual Configurator

@@ -1,11 +1,11 @@
-import { Link, type LinkProps } from "@tanstack/react-router";
+import { Link, type LinkComponentProps } from "@tanstack/react-router";
 import { TitleBox } from "../title-box";
 
 export function NavLink({
 	title,
 	description,
 	...props
-}: LinkProps & { title: string; description: string }) {
+}: LinkComponentProps & { title: string; description: string }) {
 	return (
 		<Link
 			{...props}

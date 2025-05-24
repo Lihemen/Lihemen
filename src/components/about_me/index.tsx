@@ -6,7 +6,7 @@ import { TitleBox } from "../title-box";
 
 export function AboutMe() {
 	return (
-		<aside className="flex-[0.25] flex flex-col gap-2 justify-between uppercase tracking-sm h-full">
+		<aside className="lg:flex-[0.25] flex flex-col gap-2 justify-between uppercase tracking-sm h-full pb-32 lg:pb-0">
 			<div className="flex flex-col gap-4">
 				<Link
 					to="/about-me"
