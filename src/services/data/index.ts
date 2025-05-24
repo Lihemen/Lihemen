@@ -232,6 +232,29 @@ export const LOG_ENTRIES: Array<Log> = [
 	},
 	{
 		challenges:
+			"Collaborating effectively across cross-functional teams, balancing diverse perspectives from product, design, and engineering, and managing rapid iteration cycles within tight deadlines.",
+		conclusion:
+			"Co.Lab strengthened my skills in end-to-end product development, from customer research and ideation through design and engineering, while working alongside mentors from top tech companies.",
+		current: false,
+		location: "Remote",
+		project_update:
+			"Participated in an 8-week immersive program simulating a real tech company environment, collaborating with product managers, UX/UI designers, and engineers to build user-centered products through the full software development lifecycle.",
+		next_steps:
+			"Applying cross-functional collaboration skills to impactful projects and continuing mentorship in product-driven engineering.",
+		status: "Completed",
+		start_date: new Date("2024-08-18"),
+		end_date: new Date("2023-10-18"),
+		title: "Software Developer Immersive | Co.Lab.io",
+		images: [
+			"/imgs/logs/colab/1.png",
+			"/imgs/logs/colab/2.png",
+			"/imgs/logs/colab/3.png",
+			"/imgs/logs/colab/4.png",
+			"/imgs/logs/colab/5.png",
+		],
+	},
+	{
+		challenges:
 			"Integrating multiple government APIs for real-time land record validation, ensuring data accuracy and security, and building a user-friendly interface for property listings and service requests.",
 		conclusion:
 			"The project sharpened my skills in API integration, secure data handling, and delivering an MVP that bridges government systems with end-user needs in real estate.",
