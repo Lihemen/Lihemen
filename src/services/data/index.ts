@@ -180,63 +180,88 @@ export const WORKS: Array<Work> = [
 
 export const LOG_ENTRIES: Array<Log> = [
 	{
-		challenges: "",
-		conclusion: "",
+		challenges:
+			"Balancing feature delivery with long-term scalability, navigating legacy code transitions, and aligning UI/UX improvements with evolving business priorities",
+		conclusion:
+			"This role deepened my expertise in building scalable frontend systems, strengthened my ability to collaborate across product and engineering teams, and reinforced the importance of clean architecture in rapidly growing products.",
 		current: true,
 		location: "Abuja, Nigeria",
-		next_steps: "",
-		project_update: "",
+		next_steps:
+			"Taking a short break to contribute to open source, refocus on the energy sector, and align with impactful work.",
+		project_update:
+			"Led frontend development on several large-scale platforms including a neo-bank, ERP, and digital wallet systems, delivering responsive, accessible interfaces and improving performance across key user workflows.",
 		start_date: new Date("2022-09-18"),
-		end_date: null,
+		end_date: new Date("2025-07-24"),
 		status: "In Development",
 		title: "Frontend Developer | AFEX ",
+		images: [],
 	},
 	{
-		challenges: "",
-		conclusion: "",
+		challenges:
+			"Building scalable components under tight timelines, managing async collaboration across time zones, and adapting to fast-changing product directions in a high-velocity startup environment.",
+		conclusion:
+			"This role refined my ability to work autonomously, contribute meaningfully in distributed teams, and build production-ready features in rapidly evolving codebases.",
 		current: false,
 		location: "San Francisco, US",
-		next_steps: "",
-		project_update: "",
+		next_steps:
+			"Shifting focus to more impact-driven projects, open source collaboration, and deepening my expertise in energy-tech and user-focused systems.",
+		project_update:
+			"Contributed to Jyve Partner Platform (JPP) and Central, shipping core features like job template creation, AI-driven job validation, and performance dashboards to enhance workforce efficiency and internal tooling.",
 		start_date: new Date("2024-05-22"),
 		end_date: new Date("2025-04-30"),
 		status: "Completed",
 		title: "Frontend Developer | Jyve ",
+		images: [],
 	},
 	{
-		challenges: "",
-		conclusion: "",
+		challenges:
+			"Mastering complex AWS services integration, understanding best practices for scalable cloud architecture, and preparing for rigorous certification exams under a tight schedule.",
+		conclusion:
+			"Achieving the AWS Certified Developer Associate strengthened my cloud development skills, enhanced my understanding of AWS ecosystem, and prepared me to design efficient, reliable cloud solutions.",
 		current: false,
 		location: "San Francisco, US",
-		project_update: "",
-		next_steps: "",
+		project_update:
+			"Completed comprehensive training and hands-on labs covering AWS core services, deployment, and troubleshooting to validate my cloud development expertise. Writing the Exam in July.",
+		next_steps:
+			"Pursuing the AWS Solutions Architect certification to deepen my skills in designing scalable and resilient cloud architectures.",
 		start_date: new Date("2025-01-11"),
-		end_date: new Date("2025-05-31"),
+		end_date: new Date("2025-07-31"),
 		status: "Completed",
 		title: "AWS Certified Developer Associate",
+		images: [],
 	},
 	{
-		challenges: "",
-		conclusion: "",
+		challenges:
+			"Integrating multiple government APIs for real-time land record validation, ensuring data accuracy and security, and building a user-friendly interface for property listings and service requests.",
+		conclusion:
+			"The project sharpened my skills in API integration, secure data handling, and delivering an MVP that bridges government systems with end-user needs in real estate.",
 		current: false,
 		location: "Abuja",
-		project_update: "",
-		next_steps: "",
+		project_update:
+			"Developed an MVP platform connecting users with the Land Records Bureau and Ministry of Lands to validate property records, list properties, and request surveys and documentation.",
+		next_steps:
+			"Enhancing platform features and expanding integrations to streamline property services further.",
 		status: "Completed",
 		start_date: new Date("2024-12-17"),
 		end_date: new Date("2025-03-10"),
 		title: "Slas Prop | Search for a property",
+		images: [],
 	},
 	{
-		challenges: "",
-		conclusion: "",
+		challenges:
+			"Implementing secure user authentication alongside seamless guest checkout, ensuring smooth session resumption, and integrating marketing tools for newsletters and ad campaigns.",
+		conclusion:
+			"This project enhanced my skills in full-stack e-commerce workflows, balancing user experience with security and marketing needs in a small business context.",
 		current: false,
 		location: "Abuja",
-		project_update: "",
-		next_steps: "",
+		project_update:
+			"Delivered a complete rebrand and web platform enabling authenticated and guest purchases, session persistence, and integrated newsletter and advertising management.",
+		next_steps:
+			"Exploring further client projects with a focus on scalable e-commerce solutions and marketing integrations.",
 		status: "Completed",
 		start_date: new Date("2022-10-24"),
 		end_date: new Date("2023-02-12"),
 		title: "Zashaura Perfume Store Rebrand",
+		images: [],
 	},
 ];

@@ -10,7 +10,7 @@ export function LogEntry(props: LogEntryProps) {
 			<h5 className="text-lg font-bold tracking-sm text-red-1 font-serif">
 				{props.title}
 			</h5>
-			<p className="tracking-normal text-gray-1 font-sans line-clamp-4">
+			<p className="tracking-normal text-gray-1 font-sans line-clamp-6">
 				{props.description}
 			</p>
 		</div>

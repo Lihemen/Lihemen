@@ -1,6 +1,15 @@
 @import url("/fonts/font.css");
 @import "tailwindcss";
 
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;
+}
+
 :root {
 	--font-big-shoulder: "Big Shoulder", DIN Alternate;
 	--font-iceland: "Iceland", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -24,22 +33,124 @@
 		rgba(232, 74, 74, 0) 87.5%,
 		rgba(232, 74, 74, 0) 100%
 	);
-	--bg-gradient-blue: linear-gradient(
-		270deg,
-		rgba(74, 175, 232, 0.13) 2.77%,
-		rgba(74, 175, 232, 0) 50%
-	);
-	--bg-gradient-green: linear-gradient(
-		270deg,
-		rgba(86, 205, 97, 0.13) 2.77%,
-		rgba(92, 224, 105, 0) 50%
-	);
 	--bg-gradient-red-dash: linear-gradient(
 		45deg,
 		#0a0a0a 70%,
 		#0a0a0a 90%,
 		#591515 98%,
 		#8b1e1e 100%
+	);
+}
+
+html.green:root {
+	--color-red-1: #53cc60;
+	--color-red-2: #1a4920;
+	--color-green-1: #f5c84a;
+	--color-green-2: #e8b542;
+	--color-green-3: #d8a33c;
+	--color-green-4: #ffdc68;
+	--color-gray-1: #6f9c74;
+	--color-gray-2: #1e2d1e;
+	--color-gray-3: #aacdb1;
+	--bg-gradient-red: linear-gradient(
+		90deg,
+		rgba(83, 204, 96, 0) 0%,
+		rgba(83, 204, 96, 0) 12.5%,
+		rgba(83, 204, 96, 0.17) 48%,
+		rgba(83, 204, 96, 0.17) 52%,
+		rgba(83, 204, 96, 0) 87.5%,
+		rgba(83, 204, 96, 0) 100%
+	);
+	--bg-gradient-red-dash: linear-gradient(
+		45deg,
+		#0a0a0a 70%,
+		#0a0a0a 90%,
+		#155915 98%,
+		#1e8b1e 100%
+	);
+}
+
+html.blue:root {
+	--color-red-1: #4a90e2;
+	--color-red-2: #182a49;
+	--color-green-1: #5de2d5;
+	--color-green-2: #56cdcb;
+	--color-green-3: #53cccc;
+	--color-green-4: #68fff1;
+	--color-gray-1: #7a8da8;
+	--color-gray-2: #1e2633;
+	--color-gray-3: #aabbd0;
+	--bg-gradient-red: linear-gradient(
+		90deg,
+		rgba(74, 144, 226, 0) 0%,
+		rgba(74, 144, 226, 0) 12.5%,
+		rgba(74, 144, 226, 0.17) 48%,
+		rgba(74, 144, 226, 0.17) 52%,
+		rgba(74, 144, 226, 0) 87.5%,
+		rgba(74, 144, 226, 0) 100%
+	);
+	--bg-gradient-red-dash: linear-gradient(
+		45deg,
+		#0a0a0a 70%,
+		#0a0a0a 90%,
+		#153559 98%,
+		#1e4f8b 100%
+	);
+}
+
+html.dark:root {
+	--color-red-1: #7a7a7a;
+	--color-red-2: #2a2a2a;
+	--color-green-1: #9a9a9a;
+	--color-green-2: #8b8b8b;
+	--color-green-3: #a0a0a0;
+	--color-green-4: #bfbfbf;
+	--color-gray-1: #5f5f5f;
+	--color-gray-2: #1e1e1e;
+	--color-gray-3: #c4c4c4;
+	--bg-gradient-red: linear-gradient(
+		90deg,
+		rgba(122, 122, 122, 0) 0%,
+		rgba(122, 122, 122, 0) 12.5%,
+		rgba(122, 122, 122, 0.17) 48%,
+		rgba(122, 122, 122, 0.17) 52%,
+		rgba(122, 122, 122, 0) 87.5%,
+		rgba(122, 122, 122, 0) 100%
+	);
+	--bg-gradient-red-dash: linear-gradient(
+		45deg,
+		#0a0a0a 70%,
+		#0a0a0a 90%,
+		#3a3a3a 98%,
+		#5e5e5e 100%
+	);
+}
+
+html.orange:root {
+	--color-red-1: #f68c42;
+	--color-red-2: #4d2c12;
+	--color-green-1: #72e2f5;
+	--color-green-2: #64cde8;
+	--color-green-3: #5ac2e2;
+	--color-green-4: #a0f2ff;
+	--color-gray-1: #a1784f;
+	--color-gray-2: #2c1d0a;
+	--color-gray-3: #e4c4a0;
+	--bg-gradient-red: linear-gradient(
+		90deg,
+		rgba(246, 140, 66, 0) 0%,
+		rgba(246, 140, 66, 0) 12.5%,
+		rgba(246, 140, 66, 0.17) 48%,
+		rgba(246, 140, 66, 0.17) 52%,
+		rgba(246, 140, 66, 0) 87.5%,
+		rgba(246, 140, 66, 0) 100%
+	);
+	--bg-gradient-red-dash: linear-gradient(
+		45deg,
+		#0a0a0a 70%,
+		#0a0a0a 90%,
+		#8b4a1e 98%,
+		#b85e22 100%
 	);
 }
 

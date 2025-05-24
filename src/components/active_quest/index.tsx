@@ -1,5 +1,8 @@
 import { Link } from "@tanstack/react-router";
 
+import { MusicSettings } from "../controls/music";
+import { SoundEffects } from "../controls/sound";
+import { VisualSettings } from "../controls/theme";
 import { TitleBox } from "../title-box";
 
 export function ActiveQuest() {
@@ -58,10 +61,10 @@ export function ActiveQuest() {
 				</div>
 			</Link>
 
-			<ul className="flex flex-col gap-1 *:flex *:items-center *:justify-between text-lg text-red-1 *:border *:border-transparent *:last:border-white/13 *:last:p-1.5 *:hover:border *:hover:border-current *:p-1.5 *:cursor-pointer *:active:scale-95 *:transition-all">
-				<li>Sound Effects</li>
-				<li className="opacity-50">Music</li>
-				<li>Visual Settings</li>
+			<ul className="flex flex-col gap-2">
+				<SoundEffects />
+				<MusicSettings />
+				<VisualSettings />
 			</ul>
 		</aside>
 	);

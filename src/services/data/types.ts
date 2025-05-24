@@ -25,4 +25,5 @@ export interface Log {
 	end_date: Date | null;
 	location: string;
 	status: "Completed" | "In Development";
+	images: string[];
 }
