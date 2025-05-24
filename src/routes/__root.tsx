@@ -3,6 +3,7 @@ import "@mantine/carousel/styles.css";
 
 import { AnimatePresence } from "motion/react";
 
+import { ThemeProvider } from "@/context/theme";
 import { MantineProvider, createTheme } from "@mantine/core";
 import type { QueryClient } from "@tanstack/react-query";
 import { Outlet, createRootRouteWithContext } from "@tanstack/react-router";
@@ -35,13 +36,15 @@ const theme = createTheme({
 
 export const Route = createRootRouteWithContext<MyRouterContext>()({
 	component: () => (
-		<AnimatePresence mode="wait" initial={false}>
-			<MantineProvider theme={theme} forceColorScheme="dark">
-				<Outlet />
-				<TanStackRouterDevtools />
+		<ThemeProvider>
+			<AnimatePresence mode="wait" initial={false}>
+				<MantineProvider theme={theme} forceColorScheme="dark">
+					<Outlet />
+					<TanStackRouterDevtools />
 
-				<TanstackQueryLayout />
-			</MantineProvider>
-		</AnimatePresence>
+					<TanstackQueryLayout />
+				</MantineProvider>
+			</AnimatePresence>
+		</ThemeProvider>
 	),
 });

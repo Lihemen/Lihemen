@@ -18,7 +18,7 @@ export function TitleBox({
 			className="w-12 h-12 translate-x-1  shrink-0"
 		>
 			<title>Hexagons</title>
-			<g stroke="#000" fill="none" stroke-width="1">
+			<g stroke="#000" fill="none" strokeWidth="1">
 				<polygon points="10,0 19.29,0 24,8.66 19.29,17.32 10,17.32 5.29,8.66" />
 
 				<polygon points="10,21.32 19.29,21.32 24,30 19.29,38.66 10,38.66 5.29,30" />
