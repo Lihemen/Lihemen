@@ -16,7 +16,9 @@ function RouteComponent() {
 					<div className="border border-white/13 h-40 grid place-items-center justify-center">
 						<RingProgress
 							rootColor="transparent"
-							sections={[{ value: (14 / 25) * 100, color: "#E84A4A" }]}
+							sections={[
+								{ value: (14 / 25) * 100, color: "var(--color-red-1)" },
+							]}
 							label={
 								<p className="text-center text-2.5xl text-red-1 font-serif">
 									14/25
