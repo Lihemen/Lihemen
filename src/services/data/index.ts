@@ -259,7 +259,7 @@ export const LOG_ENTRIES: Array<Log> = [
 		conclusion:
 			"The project sharpened my skills in API integration, secure data handling, and delivering an MVP that bridges government systems with end-user needs in real estate.",
 		current: false,
-		location: "Abuja",
+		location: "Abuja, Nigeria",
 		project_update:
 			"Developed an MVP platform connecting users with the Land Records Bureau and Ministry of Lands to validate property records, list properties, and request surveys and documentation.",
 		next_steps:
@@ -276,7 +276,7 @@ export const LOG_ENTRIES: Array<Log> = [
 		conclusion:
 			"This project enhanced my skills in full-stack e-commerce workflows, balancing user experience with security and marketing needs in a small business context.",
 		current: false,
-		location: "Abuja",
+		location: "Abuja, Nigeria",
 		project_update:
 			"Delivered a complete rebrand and web platform enabling authenticated and guest purchases, session persistence, and integrated newsletter and advertising management.",
 		next_steps:
