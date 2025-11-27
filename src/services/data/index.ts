@@ -153,7 +153,7 @@ export const WORKS: Array<Work> = [
 		description:
 			"Building a SaaS tool for Katsina State to manage farmers, monitor weather, and optimize crop and livestock planning.",
 		bio: "Currently serving as technical lead on this government agricultural initiative. Working with agronomists and climate scientists to translate complex agricultural models into actionable insights for over 50,000 farmers across the state.",
-		link: "http://kaspa-beryl.vercel.app/",
+		link: "https://kaspa-beryl.vercel.app/",
 		sub_title: "Smarter Farming for a Sustainable Future",
 		title: "KASPA",
 		slug: "kaspa",
@@ -172,6 +172,34 @@ export const WORKS: Array<Work> = [
 			},
 			{
 				name: "Farmer Dashboard",
+				size: 48,
+			},
+		],
+	},
+	{
+		date_published: format_date(new Date()),
+		description:
+			"Dome provides unbiased community-based reviews, ratings, insights, and intelligence. We’re saving renters from regret, one review at a time. Rate your living experience on the app today.",
+		bio: "Dome provides unbiased community-based reviews, ratings, insights, and intelligence. We’re saving renters from regret, one review at a time. Rate your living experience on the app today.",
+		link: "https://usedome.app",
+		sub_title: "Smarter Farming for a Sustainable Future",
+		title: "Dome",
+		slug: "dome",
+		image: "/imgs/works/dome.png",
+		technologies: [
+			"fa-brands fa-react",
+			"fa-brands fa-git",
+			"fa-brands fa-js",
+			"fa-brands fa-python",
+			"fa-solid fa-cloud-sun",
+		],
+		links: [
+			{
+				name: "LIVN",
+				size: 55,
+			},
+			{
+				name: "User Dashboard",
 				size: 48,
 			},
 		],
