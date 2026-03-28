@@ -1,9 +1,7 @@
 <h1 align="center">Hi 👋, I'm Hemense Lan</h1>
-<h3 align="center">Currently a power systems engineer | Formerly a frontend developer</h3>
+<h3 align="center">Currently a Power Systems Engineer | Formerly a Frontend Developer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=lihemen&label=Profile%20views&color=0e75b6&style=flat" alt="lihemen" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=lihemen" alt="lihemen" /></a> </p>
 
 - 🔭 I’m currently working on Building Protection State Machines for IEC 61850 Digital Substations
 
